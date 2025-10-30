@@ -1,0 +1,22 @@
+@import "tailwindcss";
+
+@theme {
+  --color-dark: #0f0f0f;
+  --color-light: #1c1c1c;
+  --color-primary: #2563eb;
+  --color-gray-text: #a1a1a1;
+}
+
+/* Base app shell styles for the dark ZIDIO-style dashboard */
+html, body, #root {
+  height: 100%;
+}
+
+body {
+  @apply bg-dark text-white antialiased;
+}
+
+/* Utilities */
+.glass-card {
+  @apply bg-light/90 backdrop-blur rounded-2xl border border-white/5 shadow-lg;
+}
